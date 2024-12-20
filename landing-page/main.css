@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-family: "Roboto", serif;
+}
+
+.navBar{
+    height: 10vh;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #1F2937;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.navBar > * {
+    width: 50%;
+}
+
+.logo{
+    margin-left: 50px;
+    color: #f9faf8;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    color: #E5E7EB;
+}
+
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+/* mobile css below */
+@media (min-width:320px) and (max-width: 1000px)  {
+    .navBar{
+        width: 100%;
+    }
+
+    .visible{
+        display: none !important;
+    }
+
+    .hidden{
+        display: block;
+    }
+}
